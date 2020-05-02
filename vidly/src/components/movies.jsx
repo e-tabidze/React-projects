@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
-import { toast } from "react-toastify"
+import { toast } from "react-toastify";
 import { getMovies, deleteMovie } from "../services/movieService";
 import { getGenres } from "../services/genreService";
 import { paginate } from "../utils/paginate";
@@ -36,12 +36,11 @@ class Movies extends Component {
 
     try {
       await deleteMovie(movie._id);
-    }
-    catch (ex) {
-      if (ex.response && ex.response.status === 404 )
-      toast.error('This movie has already been deleted')
+    } catch (ex) {
+      if (ex.response && ex.response.status === 404)
+        toast.error("This movie has already been deleted");
 
-      this.setState({movies: originalMovies})
+      this.setState({ movies: originalMovies });
     }
   };
 
@@ -105,6 +104,7 @@ class Movies extends Component {
       sortColumn,
       searchQuery,
     } = this.state;
+    const { user } = this.props;
 
     if (count === 0) return <p>There are no movies here</p>;
 
@@ -124,13 +124,15 @@ class Movies extends Component {
           </div>
           <div className="col">
             <p>Showing {totalCount} movies in the DB </p>
-            <Link
-              to="movies/new"
-              className="btn btn-primary"
-              style={{ marginBottom: 20 }}
-            >
-              New Movie
-            </Link>
+            {user && (
+              <Link
+                to="movies/new"
+                className="btn btn-primary"
+                style={{ marginBottom: 20 }}
+              >
+                New Movie
+              </Link>
+            )}
             <SearchBox value={searchQuery} onChange={this.handleSearch} />
             <MoviesTable
               movies={movies}
