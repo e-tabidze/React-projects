@@ -1,0 +1,22 @@
+.accountmodal {
+  display: flex;
+  flex-direction: row;
+}
+
+.login {
+  margin-right: 55px;
+}
+
+.register {
+  margin-left: 20px;
+}
+
+.decline {
+  position: absolute;
+  right: 5px;
+  top: 3px;
+}
+
+.fa-times {
+  color: #ffffff;
+}

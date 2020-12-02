@@ -1,0 +1,11 @@
+.homepage-main-container {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  margin-top: 100px;
+  margin-left: 50px;
+}
+
+.filter-section {
+    margin-right: 100px;
+}

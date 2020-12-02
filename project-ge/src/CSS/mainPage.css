@@ -1,0 +1,34 @@
+.auth-container {
+  position: absolute;
+  width: 800px;
+  height: 400px;
+  top: calc(30% - 200px);
+  left: calc(50% - 400px);
+  background-color: #f59a22;
+  border: 1px solid #f59a22;
+  border-radius: 15px;
+  z-index: 3;
+}
+.auth-container .accountmodal {
+  display: flex;
+  flex-direction: row;
+}
+.grey-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: grey;
+  opacity: 0.4;
+  z-index: 2;
+}
+
+.auth-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 100%;
+  height: 100%;
+}

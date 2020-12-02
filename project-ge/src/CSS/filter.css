@@ -1,0 +1,12 @@
+.filter-main-container {
+  margin-top: 50px;
+  border-right: 1px solid #f59a22;
+}
+
+.filter-option {
+  padding: 20px 30px 20px 30px;
+}
+
+.filter-option:hover {
+  background-color: #f59a22;
+}
