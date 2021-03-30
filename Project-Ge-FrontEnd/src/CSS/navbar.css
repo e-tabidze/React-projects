@@ -1,0 +1,58 @@
+.navbar-main-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.logo {
+  height: 80px;
+  margin-left: 50px;
+  margin-top: 50px;
+}
+
+.logo:hover {
+  filter: brightness(1.4);
+}
+
+.profile-button {
+  margin-top: 33px;
+  margin-left: 50px;
+}
+
+.email-initial {
+  height: 40px;
+  width: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 25px;
+  color: whitesmoke;
+  border-color: #f59a22;
+  background-color: #f59a22;
+  margin-top: 63px;
+  margin-left: 70px;
+}
+
+.email-initial:hover {
+  filter: brightness(1.4);
+}
+
+.profile-button:hover {
+  filter: brightness(1.4);
+}
+
+.fa-bars {
+  color: #f59a22;
+  margin-top: 55px;
+  margin-left: 50px;
+}
+
+.grey-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: grey;
+  opacity: 0.4;
+  z-index: 2;
+}

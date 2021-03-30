@@ -1,0 +1,21 @@
+.searchBox {
+    height: 30px;
+    border-radius: 1px solid blue;
+    margin-left: 70px;
+    margin-top: 70px;
+  }
+
+  .searchBox:hover {
+    filter: brightness(1.4);
+  }
+  
+  .input {
+    width: 700px;
+    height: 30px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    font-style: italic;
+    font-size: 15px;
+    border-color: #f59a22;
+  }

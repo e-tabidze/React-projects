@@ -1,0 +1,48 @@
+span {
+  display: flex;
+  align-items: flex-start;
+  margin-top: 15px;
+}
+
+.navbar-main-container {
+  width: 100%;
+}
+
+.new-product-modal-container {
+  position: absolute;
+  top: calc(10% - 50px);
+  left: calc(50% - 400px);
+  z-index: 3;
+}
+
+.new-product-modal-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 800px;
+  height: 800px;
+  background-color: #ffffff;
+  border: 4px solid #f59a22;
+  border-radius: 15px;
+}
+
+.fa-times {
+  color: #f59a22;
+}
+
+.new-product-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.text-fields {
+  display: flex;
+  flex-direction: column;
+}
+
+.new-product-fields {
+  display: flex;
+  flex-direction: row;
+}
+
