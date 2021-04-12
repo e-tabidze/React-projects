@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.field_error {
+  @apply border-2 border-auth-fielderror;
+}
+
+html {
+  height: -webkit-fill-available;
+}
+
+body {
+  min-height: 100vh;
+  min-height: -webkit-fill-available;
+}
+
+.nav_active{
+  background-color: #D9E2ED;
+}
+
+#goals-scroll::-webkit-scrollbar {
+  width: 4px;
+  cursor: pointer;
+  /*background-color: rgba(229, 231, 235, var(--bg-opacity));*/
+  width: 6px;
+  margin-right: 4px;
+
+}
+#goals-scroll::-webkit-scrollbar-track {
+  background-color: rgba(21, 62, 136, var(--bg-opacity));
+  cursor: pointer;
+  /*background: red;*/
+  width: 6px;
+  margin-right: 4px;
+}
+#goals-scroll::-webkit-scrollbar-thumb {
+  cursor: pointer;
+  background-color: #153E88;
+  border-radius:5px;
+  width: 6px;
+  margin-right: 4px;
+  /*outline: 1px solid slategrey;*/
+}
