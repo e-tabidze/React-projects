@@ -215,7 +215,6 @@ const Learn = () => {
               </div>
             </div>
           </Card>
-
           {showInfoCard && (
             <Card
               width='w-full md:w-1/3'
